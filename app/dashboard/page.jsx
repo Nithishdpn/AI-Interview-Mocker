@@ -14,9 +14,10 @@ function Dashboard() {
         <AddNewInterview/>
       </div>
 
-      {/* Previous Interview List  */}
-
+      {/* Previous Interview List */}
       <InterviewList/>
+
+      
       
     </div>
   )
