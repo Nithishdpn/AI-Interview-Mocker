@@ -42,6 +42,12 @@ function Header() {
             ${path=='/dashboard/how'&&'text-primary font-bold'}
             `}>How it Works?</li>
             </Link>
+            <Link href = 'https://your-new-website.com'> 
+            <li className={`hover:text-primary hover:font-bold transition-all
+            cursor-pointer
+            ${path==''&&'text-primary font-bold'}
+            `}>Video Conferencing</li>
+            </Link>
         </ul>
         <UserButton/>
     </div>

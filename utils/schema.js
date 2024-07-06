@@ -1,4 +1,5 @@
-import { pgTable, serial, text, varchar } from "drizzle-orm/pg-core";
+import { pgTable, serial, text, varchar, boolean } from "drizzle-orm/pg-core";
+
 
 export const MockInterview=pgTable('mockInterview',{
     id:serial('id').primaryKey(),
@@ -21,5 +22,17 @@ export const UserAnswer=pgTable('userAnswer',{
     rating:varchar('rating'),
     userEmail:varchar('userEmail'),
     createdAt:varchar('createdAt'),
+
+})
+
+
+export const User = pgTable('user', {
+    id: serial('id').primaryKey(),
+    email: varchar('email').notNull(),
+    password: varchar('password').notNull(),
+    isSubscribed: boolean('isSubscribed').notNull().default(false), // Directly use `boolean`
+    firstName: varchar('firstName').notNull(),
+    lastName: varchar('lastName').notNull(),
+    createdAt: varchar('createdAt').notNull()
 
 })
