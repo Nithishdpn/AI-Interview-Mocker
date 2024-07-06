@@ -42,7 +42,7 @@ function Header() {
             ${path=='/dashboard/how'&&'text-primary font-bold'}
             `}>How it Works?</li>
             </Link>
-            <Link href = 'https://your-new-website.com'> 
+            <Link href = 'https://live-interviewer.vercel.app/'> 
             <li className={`hover:text-primary hover:font-bold transition-all
             cursor-pointer
             ${path==''&&'text-primary font-bold'}
